@@ -9,13 +9,17 @@
     font-family: "Heinemann";
     font-weight: normal;
     src: url("./assets/HeinemannHVN-Regular.ttf");
-    src: url("./assets/HeinemannHVN-Regular.ttf") format("ttf");
+    src: url("./assets/HeinemannHVN-Regular.ttf") format("ttf"),
+      url("./assets/HeinemannHVN-Regular.woff") format("woff"),
+      url("./assets/HeinemannHVN-Regular.woff2") format("woff2");
   }
   @font-face {
     font-family: "Heinemann";
     font-weight: 900;
     src: url("./assets/HeinemannHVN-Black.ttf");
-    src: url("./assets/HeinemannHVN-Black.ttf") format("ttf");
+    src: url("./assets/HeinemannHVN-Black.ttf") format("ttf"),
+      url("./assets/HeinemannHVN-Black.woff") format("woff"),
+      url("./assets/HeinemannHVN-Black.woff2") format("woff2");
   }
   html {
     font-family: "Roboto", system-ui, sans-serif;
