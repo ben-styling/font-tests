@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className={useHeinemann ? `useHeinemann` : ``}>
         <div className="flex items-center justify-center w-full bg-gray-200 py-2">
           <label htmlFor="toggleB" className="flex items-center cursor-pointer">
             <div className="mr-3 text-gray-700 font-medium">
@@ -47,7 +47,7 @@ function App() {
       </header>
 
       <div className={`px-6` + ` ` + (useHeinemann ? `font-heading` : "")}>
-        <h1 className="font-bold pb-5 font-heading text-[32px] leading-[44px]">
+        <h1 className="font-black pb-5 font-heading text-[32px] leading-[44px]">
           Title running over multiple lines
         </h1>
         <p className="pb-7">
@@ -59,11 +59,11 @@ function App() {
           , a beautiful spot that does exactly what it says on the tin.
         </p>
 
-        <a className="flex justify-center items-center self-stretch rounded px-6 py-3 bg-havenBlue text-white mb-7">
+        <a className="flex justify-center items-center self-stretch rounded px-6 py-3 bg-havenBlue text-white mb-7 font-black">
           Book now
         </a>
 
-        <h2 className="font-bold pb-5 font-heading text-[24px] leading-[32px]">
+        <h2 className="font-black pb-5 font-heading text-[24px] leading-[32px]">
           Title running over multiple lines
         </h2>
         <p className="pb-2">
@@ -78,9 +78,9 @@ function App() {
 
         <figure>
           <img className="rounded" src="https://placehold.co/1600x900" />
-          <figCaption className="pt-2 text-sm">
+          <figCaption className="pt-2 text-sm leading-[1.6]">
             An unrivalled range of activities are yours to try, from an{" "}
-            <a className="font-bold" href="#">
+            <a className="font-black" href="#">
               Aerial Adventure
             </a>{" "}
             like no other to bouncy bungee trampolines.
@@ -88,7 +88,7 @@ function App() {
         </figure>
 
         <div className="bg-midnightBlue-75 py-5 px-6 mt-5 text-white rounded-lg">
-          <h2 className="font-bold font-heading pb-2 text-[20px] leading-[28px]">
+          <h2 className="font-black font-heading pb-2 text-[20px] leading-[28px]">
             Another heading
           </h2>
           <p>
@@ -98,7 +98,7 @@ function App() {
           </p>
         </div>
 
-        <h2 className="pt-7 pb-2 leading-[24px] font-bold text-[16px] font-heading">
+        <h2 className="pt-7 pb-2 leading-[24px] font-black text-[16px] font-heading">
           Title running over multiple lines
         </h2>
         <p>
@@ -122,13 +122,13 @@ function App() {
         </ul>
 
         <a
-          className="font-bold flex justify-center items-center gap-1 rounded border-havenBlue px-4 py-2.5 border-2 border-solid text-havenBlue"
+          className="font-black flex justify-center items-center gap-1 rounded border-havenBlue px-4 py-2.5 border-2 border-solid text-havenBlue"
           href="#"
         >
           Find out more
         </a>
 
-        <h2 className="pt-7 font-bold pb-5 font-heading text-[24px] leading-[32px]">
+        <h2 className="pt-7 font-black pb-5 font-heading text-[24px] leading-[32px]">
           Title running over multiple lines
         </h2>
 
@@ -138,7 +138,7 @@ function App() {
             <h2 className="self-stretch text-midnightBlue text-[24px] font-black leading-[32px] font-heading pb-1">
               The Jump
             </h2>
-            <div className="font-bold pb-3">£8 per person</div>
+            <div className="font-black pb-3">£8 per person</div>
             <div className="text-midnightBlue-75">
               Thrill-seeking&nbsp;&nbsp;|&nbsp;&nbsp;0-0 years
             </div>
@@ -150,7 +150,7 @@ function App() {
           </div>
 
           <div className="absolute rounded-lg inset-0 border-opacity-90 border-midnightBlue-75 border-4"></div>
-          <div className="absolute top-0 left-0 right-0 py-1 font-bold width-full text-center text-white bg-midnightBlue-75 bg-opacity-90">
+          <div className="absolute top-[2px] left-0 right-0 py-1 font-bold width-full text-center text-white bg-midnightBlue-75 bg-opacity-90">
             Recommended
           </div>
         </div>
@@ -161,10 +161,14 @@ function App() {
             <h2 className="self-stretch text-midnightBlue text-[24px] font-black leading-[32px] font-heading pb-1">
               The Jump
             </h2>
-            <div className="text-xs uppercase bg-[#FFBB13] font-bold rounded-sm px-1 w-[max-content]">
+            <div
+              className={`text-xs uppercase bg-[#FFBB13] font-bold rounded-sm px-1 w-[max-content] ${
+                useHeinemann ? "pt-[3px]" : ""
+              }`}
+            >
               Limited availability
             </div>
-            <div className="font-bold pb-3 pt-1">£8 per person</div>
+            <div className="font-black pb-3 pt-1">£8 per person</div>
             <div className="text-midnightBlue-75">
               Thrill-seeking&nbsp;&nbsp;|&nbsp;&nbsp;0-0 years
             </div>

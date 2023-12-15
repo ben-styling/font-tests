@@ -15,6 +15,14 @@
   }
   @font-face {
     font-family: "Heinemann";
+    font-weight: 700;
+    src: url("./assets/HeinemannHVN-Bold.ttf");
+    src: url("./assets/HeinemannHVN-Bold.ttf") format("ttf"),
+    url("./assets/HeinemannHVN-Bold.woff") format("woff"),
+    url("./assets/HeinemannHVN-Bold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Heinemann";
     font-weight: 900;
     src: url("./assets/HeinemannHVN-Black.ttf");
     src: url("./assets/HeinemannHVN-Black.ttf") format("ttf"),
@@ -24,6 +32,10 @@
   html {
     font-family: "Roboto", system-ui, sans-serif;
   }
+}
+
+p {
+  line-height: 1.6;
 }
 
 a {
